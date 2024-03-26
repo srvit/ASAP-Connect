@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.gov.asap.asap">
+   <uses-permission android:name="android.permission.INTERNET"/> 
+
     <application
         android:label="ASAP"
         android:name="${applicationName}"
@@ -46,5 +48,9 @@
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
         </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
     </queries>
 </manifest>
